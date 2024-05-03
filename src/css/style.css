@@ -23,7 +23,7 @@ header .main  {
 .menu {
     display: flex;
     align-items: flex-start;
-    gap: 40px; 
+    gap: 16px; 
     
 }
 #navbarSupportedContent{
@@ -312,7 +312,7 @@ footer img {
         margin-left: 0;
     }
 }
-@media (max-width: 915px) {
+@media (max-width: 844px) {
     .img-responsive {
         width: 80%; /* Với màn hình nhỏ */
     }
@@ -326,3 +326,12 @@ footer img {
         margin-left: 0;
     }
 }
+@media (max-width: 767.98px) { /* Tương ứng với breakpoint sm */
+    .list_row .item_list {
+      border-right: none; /* Bỏ border-right */
+    }
+    .item-contact {
+        margin-top: 1rem;
+        margin-left: 0px;
+    }
+  }
