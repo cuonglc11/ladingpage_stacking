@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'HelveticaNowDisplay';  
+    src: 
+    url('../font/HelveticaNowDisplay-Medium.ttf') ;  
+
+}
+
+body {
+   padding:  0;
+   margin: 0 ;
+   background: #111;
+   color: #FFF;
+   font-family: 'HelveticaNowDisplay';
+
+}
+header {
+    border-bottom: 4px solid #FFA943;
+    background: #FBFBFB;   
+}
+header .main  {
+    max-width: 1440px; background: #FBFBFB ;
+}
+.menu {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; 
+    
+}
+#navbarSupportedContent{
+    margin-left: 5rem;
+}
+.menu a {
+    color:  #111;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+header button {
+    display: flex;
+    padding: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    border: 2px solid #111;
+
+    background: var(--Style, #FFA943);
+    box-shadow: 0px 4px 0px 0px #FFA943;
+    color: var(--white, #FFF);
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.layout-1 {
+    opacity: 1;
+    background: url(../img/layout.png) lightgray 0px -47px / 100% 106.984% no-repeat;
+    height: 673px;
+    flex-shrink: 0;
+    align-items: center;
+    padding-top: 5%;
+}
+.custom-gap {
+    gap: 8px; /* Khoảng cách giữa các phần tử */
+}
+.item-contact {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 24px;
+   /* gap: 12px; */
+   margin-left: 13px
+}
+
+.item-contact img {
+    width: 72px;
+height: 72px;
+}
+.item-contact h1 {
+    color: #FFF;
+
+font-family: "HelveticaNowDisplay";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px;
+}
+.item-contact p {
+    color: #FFF;
+    font-family: "HelveticaNowDisplay";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.my-custom-style {
+    color: #FFF;  
+    text-align: center; 
+    font-size: 36px;  
+    font-style: normal; 
+    font-weight: 700; 
+    line-height: 54px;  
+}
+.my-custom-style p {
+    color: #FFF;
+
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+}
+.custom-padding {
+    padding: 44px 56px;  /* Thiết lập padding 44px trên/dưới và 56px trái/phải */
+}
+.bg-customer {
+    background: rgba(255, 255, 255, 0.05) ;
+    border-radius: 20px;
+}
+.item-page img {
+    width: 100%;
+/* height: 392px; */
+flex-shrink: 0
+}
+.item-page-1 img {
+    width: 42px;
+} 
+.list {
+    /* margin-right: 1px; */
+}
+.list h1  {
+    color: #FFF;
+
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px;
+}
+.list p{
+    color: #FFF;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+}
+.my-custom-tab {
+    /* display: flex; */
+padding: 8px;
+align-items: flex-start;
+border-radius: 99px;
+background: rgba(255, 255, 255, 0.10);
+}
+.my-custom-tab .actvi {
+    border-radius: 99px;
+background: #FFA943;
+}
+.bg-customer-1 {
+    background: rgba(255, 255, 255, 0.05);
+}
+.staking h1  {
+    color: #FFF;
+
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px;
+}
+.staking p {
+    color: #FFF;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+opacity: 0.6;
+}
+.staking img {
+    /* margin-top: -52px;
+    margin-left: 68px; */
+    width: 100%;
+
+}
+.bg-customer-4 {
+    border-radius: 32px;
+    border: 1px dashed rgba(255, 255, 255, 0.50);
+    padding: 40px 32px;
+    background: rgba(255, 255, 255, 0.02);
+}
+.bg-customer-4 h1 {
+    color: #FFF;
+    /* text-align: right; */
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+}
+.kevach {
+    width: 48px;
+    height: 5px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-radius: 4px;
+
+background: #FFA943;
+}
+.bg-customer-4 h3 {
+    color: #FFF;
+
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+}
+.bg-customer-4 p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    opacity: 0.6;
+}
+.list_row {
+    border-radius: 99px;
+    padding: 5px;
+background: rgba(255, 255, 255, 0.05);
+/* margin-top: 6%; */
+
+}
+.list_row img {
+    width: 24px;
+}
+.list_row span {
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 1%;
+}
+.list_row .item_list {
+    border-right:1px solid rgba(255, 255, 255, 0.10);
+    padding: 10px;
+}
+.list_row .item_list_f {
+    padding: 10px;
+}
+footer {
+    background: rgba(255, 255, 255, 0.02);
+    /* padding: 12px; */
+}
+.layout-1 button {
+    border-radius: 16px;
+    background:  #FFA943;
+    box-shadow: 0px 4px 0px 0px #94642C;
+    padding: 10px 32px;
+    color: #FFF;
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+footer p {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.4;
+    margin-top: 12px;
+}
+footer img {
+    /* margin-top: 12px; */
+    align-self: flex-end;
+
+}
+.title {
+    border-radius: 99px;
+    background: rgba(255, 255, 255, 0.10);
+    padding: 9px;
+}
+.title span {
+    color: #FFF;
+    opacity: 0.8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; 
+    margin-left: 12px;
+}
+.img-responsive {
+    width: 100%; /* Với màn hình lớn */
+    height: auto;
+}
+.staking_h1 {
+    margin-top: 3rem;
+}
+@media (max-width: 767px) {
+    .img-responsive {
+        width: 80%; /* Với màn hình nhỏ */
+    }
+    .item-contact {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        padding: 24px;
+       /* gap: 12px; */
+    }
+    #navbarSupportedContent{
+        margin-left: 0;
+    }
+}
+@media (max-width: 915px) {
+    .img-responsive {
+        width: 80%; /* Với màn hình nhỏ */
+    }
+    .item-contact {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        padding: 24px;
+       /* gap: 12px; */
+    }
+    #navbarSupportedContent{
+        margin-left: 0;
+    }
+}
