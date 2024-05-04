@@ -9,25 +9,25 @@
 </head>
 <body>
     <header>
-        <nav class="container navbar navbar-expand-lg navbar-light bg-light">
-            <img src="./src/img/logo.svg"/>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="container navbar navbar-expand-lg">
+            <img src="./src/img/logo.png" width="201"/>
+            <button class="navbar-toggler" style="color: white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-          
+
             <div class="collapse navbar-collapse"  id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto menu">
-                <li class="nav-item active">
+                <li class="nav-item ">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item ">
                   <a class="nav-link" href="#">Expertise</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link disabled" href="#">Services</a>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#">Services</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link disabled" href="#">Staking</a>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Staking</a>
                   </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
@@ -50,44 +50,44 @@
                    build on Web3 technology
                 </p>
                 <button>
-                    Learn more
+                    Register
                 </button>
              </div>
              <div class="col-lg-6 col-md-12 d-none d-md-block justify-content-center align-items-center">
-               <img src="./src/img/m.png" class="img-fluid " />
+               <img src="./src/img/m.png" class="rotate  img-fluid " />
              </div>
              <div class="col-lg-6 col-md-12 d-block d-md-none justify-content-center align-items-center">
-                <img src="./src/img/m.png" class="img-fluid " style="width: 70%;" />
+                <img src="./src/img/m.png" class="rotate img-fluid " style="width: 70%;" />
               </div>
          </div>
        </div>
     </section>
-    <section class="container my-5">
+    <section class="container my-5 lazy-content">
         <div class="row">
             <div class="col-md-12 col-lg item-contact">
                 <img src="./src/img/ai.png"/>
                 <h1>Technology</h1>
                 <p>The decision to add a transaction to the blockchain is made by consensus. 0bnetwork provide the computing power to verify transactions and earn rewards in form of digital assets.</p>
-         
+
             </div>
             <div class="col-md-12 col-lg item-contact  ml-lg-12" >
                 <img src="./src/img/prima.png"/>
                 <h1>Security</h1>
                 <p>Verification requires hardware to be consistently online, without security vulnerabilities that may effect potential rewards. 0bnetwork provide the most secure non-custodial blockchain solutions.</p>
-          
+
             </div>
             <div class="col-md-12 col-lg item-contact" >
                 <img src="./src/img/start.png" />
                 <h1>Experience</h1>
                 <p>0bnetwork have been working on blockchain projects since 2017, providing a safe and secure technological infrastructure to support the most innovative protocols.</p>
-          
+
             </div>
         </div>
     </section>
     <section class="container my-5">
         <div class="d-flex flex-column align-items-center gap-3 align-self-stretch">
-            <div class="my-custom-style">  
-                <h1>Our Expertise</h1> 
+            <div class="my-custom-style">
+                <h1>Our Expertise</h1>
                 <p>Building towards the next frontier in blockchain infrastructure.</p>
             </div>
         </div>
@@ -107,7 +107,7 @@
                     <div class="col-lg-11 col-md-12 list">
                          <h1>Highly-available Infrastructure</h1>
                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                          </p>
                      </div>
 
@@ -119,7 +119,7 @@
                     <div class="col-lg-11 col-md-12 list">
                          <h1>Data Streams</h1>
                          <p>
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                           </p>
                      </div>
 
@@ -140,50 +140,152 @@
     </section>
     <section class="container my-5">
         <div class="d-flex flex-column align-items-center gap-3 align-self-stretch">
-            <div class="my-custom-style">  
-                <h1>RieDog Blockchain Technology</h1> 
+            <div class="my-custom-style">
+                <h1>Topcoinmarket Blockchain Technology</h1>
+<!--                <div class="kevach">-->
+<!--                </div>-->
             </div>
         </div>
     </section>
     <section class="container my-5">
         <div class="d-flex flex-column align-items-center gap-3 align-self-stretch">
-            <div class="row my-custom-tab">  
-              <div class="col actvi">
+            <div class="row my-custom-tab">
+             <div class="col tab-header active" data-tab="tab-staking">
                 Staking
               </div>
-              <div class="col">
+              <div class="col tab-header" data-tab="tab-mining">
                 Mining
-               </div>
-               <div class="col">
-                  Data
-             </div>
-             <div class="col">
+              </div>
+              <div class="col tab-header" data-tab="tab-data">
+                Data
+              </div>
+              <div class="col tab-header" data-tab="tab-about">
                 About
-             </div>
+              </div>
             </div>
         </div>
     </section>
     <section class="container-fluid my-5 bg-customer-1">
-        <!-- Thiết lập Flexbox theo chiều dọc với cấu hình mong muốn -->
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12">
-                <h1 class="staking_h1">Staking (PoS)</h1>
-                <p>
-                    Staking is where a cryptocurrency holder participates in the validation of transactions on a proof-of-stake (PoS) blockchain, similar to mining. This is achieved by the holder making their coins available to the network as a stake (a bit like a security deposit).
+        <div class="row tab-content my-3">
+            <div id="tab-staking" class="col active">
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class=" container row staking_e">
+                            <img src="src/img/e1.svg">
+                            <img src="src/img/e2.svg">
+                            <img src="src/img/e3.svg">
+                            <img src="src/img/e4.svg">
 
-                    The larger the deposited volume of cryptocurrency, the larger the participation in verifying transactions of a blockchain. The volume of coins staked is directly proportionate to the opportunity of being chosen to validate a transaction and earning rewards.
 
-                    In this way, an attractive, additional income can be generated, which is independent of the possible increase or decrease in the price of the coin itself.
-
-                    In principle, the profits generated by staking correspond to a dividend distribution for stocks in corporations.
-                </p>
+                        </div>
+                        <h1 class="staking_h1">Staking (PoS)</h1>
+                       <p>
+                           Staking is where a cryptocurrency holder participates in the validation of transactions on a proof-of-stake (PoS) blockchain, similar to mining. This is achieved by the holder making their coins available to the network as a stake (a bit like a security deposit).
+                       </p>
+                        <p>
+                            The larger the deposited volume of cryptocurrency, the larger the participation in verifying transactions of a blockchain. The volume of coins staked is directly proportionate to the opportunity of being chosen to validate a transaction and earning rewards.
+                        </p>
+                        <p>
+                            In this way, an attractive, additional income can be generated, which is independent of the possible increase or decrease in the price of the coin itself.
+                        </p>
+                        <p>
+                            In principle, the profits generated by staking correspond to a dividend distribution for stocks in corporations.
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-lg-6 staking" >
+                       <img src="./src/img/money.png"/>
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class="col-md-12 col-lg-6 staking" >
-               <img src="./src/img/money.png"/>
+            <div id="tab-mining" class="col d-none">
+                <div class="container">
+                    <div class="row  my-3">
+                        <div class="col-lg-6 col-md-12">
+                            <div class=" container row staking_e">
+                                <img src="src/img/e1.svg">
+                                <img src="src/img/e2.svg">
+                                <img src="src/img/e3.svg">
+                                <img src="src/img/e4.svg">
+
+
+                            </div>
+                            <h1 class="staking_h1">Mining (PoW)</h1>
+                            <p>
+                                In simple terms, crypto mining is the process of creating cryptocurrency. "Mining" is performed using sophisticated hardware that solves an extremely complex computational math problem, that once completed, contributes towards the verification of a transaction on the blockchain.
+                            </p>
+                            <p>
+                                It is also the way that new transactions are confirmed by the network and a critical component of the maintenance and development of the blockchain ledger.
+                            </p>
+                            <p>
+                                The process is complete only when a “miner” verifies the transaction as legitimate. Once that is done, the transaction is locked into the blockchain for everyone to see and is deemed complete. The 'miner' receives cryptocurrency as a reward, usually the same as what is being mined.
+                            </p>
+                             </div>
+                        <div class="col-md-12 col-lg-6 staking" >
+                           <img src="./src/img/daomo.png"/>
+                        </div>
+                    </div>
+                  </div>
             </div>
-        </div>
-      </div>
+            <div id="tab-data" class="col d-none">
+                <div class="container">
+                    <div class="row  my-3">
+                        <div class="col-lg-6 col-md-12">
+                            <div class=" container row staking_e">
+                                <img src="src/img/e1.svg">
+                                <img src="src/img/e2.svg">
+                                <img src="src/img/e3.svg">
+                                <img src="src/img/e4.svg">
+
+
+                            </div>
+                            <h1 class="staking_h1">Data</h1>
+                         <p>
+                             Topcoinmarket is a technology-first organization that has a data driven approach in creating and capturing value in the blockchain ecosystem. Blockchain analytics is the process of analyzing, identifying and 'clustering' data on the blockchain.
+                         </p>
+                            <p>
+                                Topcoinmarket Index is a proprietary machine learning tool, analyzing, identifying and 'clustering' data on the blockchain. Combining traditional models like the Markowitz and VIX with sentiment analysis, Topcoinmarket Index analyzes, models and visually represents big data from various blockchains to Google Trends for, but not limited to, technical analysis to predict future market behaviors according to certain patterns.
+                            </p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 staking" >
+                           <img src="./src/img//data_img.png"/>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div id="tab-about" class="col d-none">
+                <div class="container">
+                    <div class="row  my-3">
+                        <div class="col-lg-6 col-md-12">
+                            <div class=" container row staking_e">
+                                <img src="src/img/e1.svg">
+                                <img src="src/img/e2.svg">
+                                <img src="src/img/e3.svg">
+                                <img src="src/img/e4.svg">
+
+
+                            </div>
+                            <h1 class="staking_h1">About</h1>
+                            <p>
+                                Topcoinmarket is a leading blockchain infrastructure company. An early pioneer of technology, operating validator nodes and building blockchain infrastructure.                            </p>
+                            <p>
+                                Topcoinmarket have been working on blockchain projects since 2017, providing a safe and secure technological infrastructure to support the most innovative protocols.
+                            </p>
+                            <p>
+                                Shortly after inception, Topcoinmarket was fully focused on proof of stake protocols and decentralized finance, taking advantage of the knowledge from the mining business.
+                            </p>
+                            <p>
+                                Today Topcoinmarket supply high-uptime and secure technology for some of the major blockchains protocols and became a trustworthy company with resources of $30 million US dollars in their own funds.
+                            </p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 staking" >
+                            <img src="./src/img/About.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
     </section>
     <section class="container my-5 bg-customer-4">
         <div class="row">
@@ -206,19 +308,19 @@
                 </p>
                 <div class="row list_row ">
                     <div class="col-6 col-md-3 col-lg-3 item_list">
-                        <img src="src/img/true.png" alt="Licensed" /> 
+                        <img src="src/img/true.png" alt="Licensed" />
                         <span>Licensed</span>
                     </div>
                     <div class="col-6 col-md-3 col-lg-3 item_list">
-                        <img src="src/img/true.png" alt="Secure" /> 
+                        <img src="src/img/true.png" alt="Secure" />
                         <span>Secure</span>
                     </div>
                     <div class="col-6 col-md-3 col-lg-3 item_list">
-                        <img src="src/img/true.png" alt="Experienced" /> 
+                        <img src="src/img/true.png" alt="Experienced" />
                         <span>Experienced</span>
                     </div>
                     <div class="col-6 col-md-3 col-lg-3 item_list_f">
-                        <img src="src/img/true.png" alt="Trustworthy" /> 
+                        <img src="src/img/true.png" alt="Trustworthy" />
                         <span>Trustworthy</span>
                     </div>
                 </div>
@@ -229,7 +331,8 @@
         <div class=" container " style="padding-top: 12px;">
             <div class="row">
                 <div class="col">
-                    <img src="./src/img/logo.svg"/>
+                    <img src="./src/img/logo.png" width="201"/>
+
                 </div>
                 <div class="col-8">
                    <p>© 2024 RieDog Blockchain Technology, All rights reserved.</p>
@@ -240,10 +343,43 @@
 
                  </div>
             </div>
-           
+
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+<script>
+    document.querySelectorAll('.tab-header').forEach(tab => {
+    tab.addEventListener('click', function() {
+        // Xóa lớp 'active' khỏi tất cả các tab headers
+        document.querySelectorAll('.tab-header').forEach(t => t.classList.remove('active'));
+        // Thêm lớp 'active' vào tab hiện tại
+        this.classList.add('active');
+
+        // Xóa 'd-none' khỏi tab nội dung được chọn và thêm nó vào các tab khác
+        const tabId = this.getAttribute('data-tab');
+        document.querySelectorAll('.tab-content > .col').forEach(content => {
+            if (content.id === tabId) {
+                content.classList.remove('d-none');
+                content.classList.add('active');
+            } else {
+                content.classList.remove('active');
+                content.classList.add('d-none');
+            }
+        });
+    });
+});
+    const sections = document.querySelectorAll('.lazy-content'); /* Chọn các phần tử cần quan sát */
+    const observer = new Intersection Observer((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); /* Thêm lớp CSS khi phần tử được xem thấy */
+                observer.unobserve(entry.target); /* Ngừng quan sát phần tử sau khi đã xử lý */
+            }
+        });
+    }, { threshold: 0.1 }); /* Kích hoạt khi phần tử hiển thị ít nhất 10% trong vùng nhìn thấy */
+
+    sections.forEach(section => observer.observe(section));
+</script>

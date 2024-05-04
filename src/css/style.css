@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'HelveticaNowDisplay';  
-    src: 
-    url('../font/HelveticaNowDisplay-Medium.ttf') ;  
+    font-family: 'HelveticaNowDisplay';
+    src:
+    url('../font/HelveticaNowDisplay-Medium.ttf') ;
 
 }
 
@@ -11,26 +11,35 @@ body {
    background: #111;
    color: #FFF;
    font-family: 'HelveticaNowDisplay';
+    margin-top: 60px;
 
 }
 header {
-    border-bottom: 4px solid #FFA943;
-    background: #FBFBFB;   
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(28, 36, 43, 0.50);
+    padding: 16px 100px;
+    backdrop-filter: blur(10px);
+    position: fixed;  /* Đặt vị trí cố định */
+    top: 0;           /* Cố định ở đầu trang */
+    left: 0;          /* Căn trái */
+    right: 0;         /* Căn phải */
+    z-index: 100;
 }
-header .main  {
-    max-width: 1440px; background: #FBFBFB ;
-}
+/*header .main  {*/
+/*    max-width: 1440px; background: #FBFBFB ;*/
+/*}*/
 .menu {
     display: flex;
     align-items: flex-start;
-    gap: 16px; 
-    
+    gap: 16px;
+    color: white;
+
 }
 #navbarSupportedContent{
-    margin-left: 5rem;
+    margin-left: 9rem;
 }
 .menu a {
-    color:  #111;
+    color:  #FFF;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -42,13 +51,10 @@ header button {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    border-radius: 16px;
     border: 2px solid #111;
-
-    background: var(--Style, #FFA943);
-    box-shadow: 0px 4px 0px 0px #FFA943;
+    border-radius: 99px;
+    background: var(--gradient, linear-gradient(90deg, #00ABFF 0%, #0098E3 100%));
     color: var(--white, #FFF);
-    font-family: "Comic Sans MS";
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -65,6 +71,14 @@ header button {
 .custom-gap {
     gap: 8px; /* Khoảng cách giữa các phần tử */
 }
+.lazy-content {
+    opacity: 1; /* Ban đầu phần tử chưa hiển thị */
+    transition: opacity 1s; /* Hiệu ứng mượt mà khi hiển thị */
+}
+
+.lazy-content.visible {
+    opacity: 1; /* Khi được xem thấy, phần tử sẽ hiển thị */
+}
 .item-contact {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
@@ -80,7 +94,6 @@ height: 72px;
 .item-contact h1 {
     color: #FFF;
 
-font-family: "HelveticaNowDisplay";
 font-size: 24px;
 font-style: normal;
 font-weight: 700;
@@ -88,19 +101,18 @@ line-height: 32px;
 }
 .item-contact p {
     color: #FFF;
-    font-family: "HelveticaNowDisplay";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
 }
 .my-custom-style {
-    color: #FFF;  
-    text-align: center; 
-    font-size: 36px;  
-    font-style: normal; 
-    font-weight: 700; 
-    line-height: 54px;  
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
 }
 .my-custom-style p {
     color: #FFF;
@@ -109,7 +121,7 @@ text-align: center;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; 
+line-height: 24px;
 }
 .custom-padding {
     padding: 44px 56px;  /* Thiết lập padding 44px trên/dưới và 56px trái/phải */
@@ -125,7 +137,7 @@ flex-shrink: 0
 }
 .item-page-1 img {
     width: 42px;
-} 
+}
 .list {
     /* margin-right: 1px; */
 }
@@ -143,7 +155,7 @@ line-height: 32px;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; 
+line-height: 24px;
 }
 .my-custom-tab {
     /* display: flex; */
@@ -152,9 +164,9 @@ align-items: flex-start;
 border-radius: 99px;
 background: rgba(255, 255, 255, 0.10);
 }
-.my-custom-tab .actvi {
+.my-custom-tab .active {
     border-radius: 99px;
-background: #FFA943;
+    background: var(--Primary, #00ABFF);
 }
 .bg-customer-1 {
     background: rgba(255, 255, 255, 0.05);
@@ -205,6 +217,35 @@ opacity: 0.6;
 
 background: #FFA943;
 }
+.img-fluid {
+    transition: transform 0.3s; /* Chuyển đổi mượt mà trong 0.3 giây */
+}
+
+.img-fluid:hover {
+    transform: scale(1.1); /* Phóng to hình ảnh khi hover */
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Vị trí ban đầu */
+    }
+    25% {
+        transform: rotate(15deg); /* Lắc về một phía */
+    }
+    50% {
+        transform: rotate(-15deg); /* Lắc về phía kia */
+    }
+    75% {
+        transform: rotate(15deg); /* Lắc về phía trước */
+    }
+    100% {
+        transform: rotate(0deg); /* Quay về vị trí ban đầu */
+    }
+}
+
+.rotate {
+    animation: rotate 2s infinite; /* Thực hiện hiệu ứng trong 2 giây, lặp lại vô tận */
+    transform-origin: top; /* Xoay liên tục trong 3 giây */
+}
 .bg-customer-4 h3 {
     color: #FFF;
 
@@ -218,7 +259,7 @@ background: #FFA943;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; 
+    line-height: 24px;
     opacity: 0.6;
 }
 .list_row {
@@ -251,12 +292,10 @@ footer {
     /* padding: 12px; */
 }
 .layout-1 button {
-    border-radius: 16px;
-    background:  #FFA943;
-    box-shadow: 0px 4px 0px 0px #94642C;
+    border-radius: 99px;
+    background: var(--Primary, #00ABFF);
     padding: 10px 32px;
     color: #FFF;
-    font-family: "Comic Sans MS";
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -272,6 +311,14 @@ footer p {
     opacity: 0.4;
     margin-top: 12px;
 }
+.my-3 p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    opacity: 0.6;
+    line-height: 24px;
+}
 footer img {
     /* margin-top: 12px; */
     align-self: flex-end;
@@ -281,6 +328,8 @@ footer img {
     border-radius: 99px;
     background: rgba(255, 255, 255, 0.10);
     padding: 9px;
+    margin-top: 9rem;
+
 }
 .title span {
     color: #FFF;
@@ -288,7 +337,7 @@ footer img {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 26px; 
+    line-height: 26px;
     margin-left: 12px;
 }
 .img-responsive {
@@ -296,7 +345,15 @@ footer img {
     height: auto;
 }
 .staking_h1 {
-    margin-top: 3rem;
+    margin-top: 2rem;
+}
+.staking_e img {
+    width: 2%;
+    margin-top: 2rem;
+
+}
+.staking_e {
+    gap: 12px;
 }
 @media (max-width: 767px) {
     .img-responsive {
