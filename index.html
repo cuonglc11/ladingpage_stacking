@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trang Bootstrap Mẫu</title>
+    <title>Top ConiMarket</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/css/style.css"/>
 </head>
@@ -11,9 +11,10 @@
     <header>
         <nav class="container navbar navbar-expand-lg">
             <img src="./src/img/logo.png" width="201"/>
-            <button class="navbar-toggler" style="color: white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
+    
 
             <div class="collapse navbar-collapse"  id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto menu">
@@ -171,14 +172,7 @@
               <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <div class=" container row staking_e">
-                            <img src="src/img/e1.svg">
-                            <img src="src/img/e2.svg">
-                            <img src="src/img/e3.svg">
-                            <img src="src/img/e4.svg">
-
-
-                        </div>
+                            <img src="src/img/e.png" class="img-svg">
                         <h1 class="staking_h1">Staking (PoS)</h1>
                        <p>
                            Staking is where a cryptocurrency holder participates in the validation of transactions on a proof-of-stake (PoS) blockchain, similar to mining. This is achieved by the holder making their coins available to the network as a stake (a bit like a security deposit).
@@ -203,14 +197,8 @@
                 <div class="container">
                     <div class="row  my-3">
                         <div class="col-lg-6 col-md-12">
-                            <div class=" container row staking_e">
-                                <img src="src/img/e1.svg">
-                                <img src="src/img/e2.svg">
-                                <img src="src/img/e3.svg">
-                                <img src="src/img/e4.svg">
+                            <img src="src/img/e.png" class="img-svg">
 
-
-                            </div>
                             <h1 class="staking_h1">Mining (PoW)</h1>
                             <p>
                                 In simple terms, crypto mining is the process of creating cryptocurrency. "Mining" is performed using sophisticated hardware that solves an extremely complex computational math problem, that once completed, contributes towards the verification of a transaction on the blockchain.
@@ -232,14 +220,8 @@
                 <div class="container">
                     <div class="row  my-3">
                         <div class="col-lg-6 col-md-12">
-                            <div class=" container row staking_e">
-                                <img src="src/img/e1.svg">
-                                <img src="src/img/e2.svg">
-                                <img src="src/img/e3.svg">
-                                <img src="src/img/e4.svg">
+                            <img src="src/img/e.png" class="img-svg">
 
-
-                            </div>
                             <h1 class="staking_h1">Data</h1>
                          <p>
                              Topcoinmarket is a technology-first organization that has a data driven approach in creating and capturing value in the blockchain ecosystem. Blockchain analytics is the process of analyzing, identifying and 'clustering' data on the blockchain.
@@ -258,14 +240,8 @@
                 <div class="container">
                     <div class="row  my-3">
                         <div class="col-lg-6 col-md-12">
-                            <div class=" container row staking_e">
-                                <img src="src/img/e1.svg">
-                                <img src="src/img/e2.svg">
-                                <img src="src/img/e3.svg">
-                                <img src="src/img/e4.svg">
+                            <img src="src/img/e.png" class="img-svg">
 
-
-                            </div>
                             <h1 class="staking_h1">About</h1>
                             <p>
                                 Topcoinmarket is a leading blockchain infrastructure company. An early pioneer of technology, operating validator nodes and building blockchain infrastructure.                            </p>
@@ -371,15 +347,15 @@
         });
     });
 });
-    const sections = document.querySelectorAll('.lazy-content'); /* Chọn các phần tử cần quan sát */
-    const observer = new Intersection Observer((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible'); /* Thêm lớp CSS khi phần tử được xem thấy */
-                observer.unobserve(entry.target); /* Ngừng quan sát phần tử sau khi đã xử lý */
-            }
-        });
-    }, { threshold: 0.1 }); /* Kích hoạt khi phần tử hiển thị ít nhất 10% trong vùng nhìn thấy */
+    // const sections = document.querySelectorAll('.lazy-content'); /* Chọn các phần tử cần quan sát */
+    // const observer = new Intersection Observer((entries) => {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //             entry.target.classList.add('visible'); /* Thêm lớp CSS khi phần tử được xem thấy */
+    //             observer.unobserve(entry.target); /* Ngừng quan sát phần tử sau khi đã xử lý */
+    //         }
+    //     });
+    // }, { threshold: 0.1 }); /* Kích hoạt khi phần tử hiển thị ít nhất 10% trong vùng nhìn thấy */
 
-    sections.forEach(section => observer.observe(section));
+    // sections.forEach(section => observer.observe(section));
 </script>
