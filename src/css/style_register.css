@@ -107,3 +107,27 @@ line-height: 24px;
     width: 85%;
     margin-top: 3rem;
 }
+.title-end {
+    color: var(--White, #FFF);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 1rem;
+    opacity: 0.7;
+
+    /* margin-bottom: 15rem; */
+}
+.frame-end img {
+    width: 85%;
+    margin-top: 3rem;
+}
+.item-list {
+    gap: 12px;
+}
+.item-list li {
+    margin-left: 1rem;
+    font-size: 14px;
+    color: var(--White, #FFF);
+    opacity: 0.7;
+    margin-top: 1rem;
+}
