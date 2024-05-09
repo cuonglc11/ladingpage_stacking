@@ -19,16 +19,16 @@
             <div class="collapse navbar-collapse"  id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto menu">
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">Expertise</a>
+                  <a class="nav-link"  href="#expertise">Expertise</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">Services</a>
+                  <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Staking</a>
+                    <a class="nav-link" href="#staking">Staking</a>
                   </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
@@ -37,7 +37,7 @@
             </div>
           </nav>
     </header>
-    <section class="layout-1">
+    <section class="layout-1" id="home">
        <div class="container">
          <div class="row">
              <div class="col-lg-6 col-md-12">
@@ -63,7 +63,7 @@
          </div>
        </div>
     </section>
-    <section class="container my-5 lazy-content">
+    <section class="container my-5 lazy-content section-1">
         <div class="row">
             <div class="col-md-12 col-lg item-contact">
                 <img src="./src/img/ai.png"/>
@@ -85,7 +85,7 @@
             </div>
         </div>
     </section>
-    <section class="container my-5">
+    <section class="container my-5 section-2" id="expertise">
         <div class="d-flex flex-column align-items-center gap-3 align-self-stretch">
             <div class="my-custom-style">
                 <h1>Our Expertise</h1>
@@ -93,7 +93,7 @@
             </div>
         </div>
     </section>
-    <section class="container my-5 bg-customer">
+    <section class="container my-5 bg-customer section-3" >
         <!-- Thiết lập Flexbox theo chiều dọc với cấu hình mong muốn -->
         <div class="row">
             <!-- Các phần tử con -->
@@ -143,12 +143,11 @@
         <div class="d-flex flex-column align-items-center gap-3 align-self-stretch">
             <div class="my-custom-style">
                 <h1>Topcoinmarket Blockchain Technology</h1>
-<!--                <div class="kevach">-->
-<!--                </div>-->
+
             </div>
         </div>
     </section>
-    <section class="container my-5">
+    <section class="container my-5" >
         <div class="d-flex flex-column align-items-center gap-3 align-self-stretch">
             <div class="row my-custom-tab">
              <div class="col tab-header active" data-tab="tab-staking">
@@ -166,7 +165,7 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid my-5 bg-customer-1">
+    <section class="container-fluid my-5 bg-customer-1"  id="services">
         <div class="row tab-content my-3">
             <div id="tab-staking" class="col active">
               <div class="container">
@@ -263,7 +262,7 @@
             </div>
           </div>
     </section>
-    <section class="container my-5 bg-customer-4">
+    <section class="container my-5 bg-customer-4" id="staking">
         <div class="row">
             <div class="col-md-12 col-lg-6 item-page">
                 <img src="./src/img/nhamay.png"/>
@@ -315,7 +314,7 @@
                 </div>
                 <div class="col">
                    <img src="./src/img/tele.svg"/>
-                   <img src="./src/img/Twitter.svg"/>
+                   <img src="./src/img/Twitter.svg" style="margin-left: 1rem;"/>
 
                  </div>
             </div>
@@ -347,15 +346,47 @@
         });
     });
 });
-    // const sections = document.querySelectorAll('.lazy-content'); /* Chọn các phần tử cần quan sát */
-    // const observer = new Intersection Observer((entries) => {
-    //     entries.forEach(entry => {
-    //         if (entry.isIntersecting) {
-    //             entry.target.classList.add('visible'); /* Thêm lớp CSS khi phần tử được xem thấy */
-    //             observer.unobserve(entry.target); /* Ngừng quan sát phần tử sau khi đã xử lý */
-    //         }
-    //     });
-    // }, { threshold: 0.1 }); /* Kích hoạt khi phần tử hiển thị ít nhất 10% trong vùng nhìn thấy */
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const targetId = link.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
 
-    // sections.forEach(section => observer.observe(section));
+    if (targetElement) {
+      e.preventDefault(); // Ngăn chặn hành vi mặc định
+      targetElement.scrollIntoView({ behavior: 'smooth' }); // Cuộn mượt mà
+    }
+  });
+});
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    const buffer = 150; 
+    // return (
+    //     rect.top >= 0 &&
+    //     rect.left >= 0 &&
+    //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    //     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    // );
+    return (
+        rect.bottom > -buffer &&
+        rect.top < (window.innerHeight || document.documentElement.clientHeight) + buffer
+    );
+}
+
+function checkVisibility() {
+    const sections = document.querySelectorAll('section');
+    sections.forEach((section) => {
+        if (isElementInViewport(section)) {
+            section.classList.add('visible');
+        }
+        else {
+            section.classList.remove('visible'); // 
+        }
+    });
+}
+
+window.addEventListener('scroll', checkVisibility);
+window.addEventListener('load', checkVisibility);
+
 </script>
+<!--                <div class="kevach">-->
+<!--                </div>-->

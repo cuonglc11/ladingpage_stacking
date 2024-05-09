@@ -112,7 +112,7 @@ font-weight: 700;
 line-height: 32px;
 }
 .item-contact p {
-    color: #FFF;
+    color: #ACACAC;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -127,7 +127,7 @@ line-height: 32px;
     line-height: 54px;
 }
 .my-custom-style p {
-    color: #FFF;
+    color: #ACACAC;
 
 text-align: center;
 font-size: 16px;
@@ -162,7 +162,7 @@ font-style: normal;
 line-height: 32px;
 }
 .list p{
-    color: #FFF;
+    color: #ACACAC;
 
 font-size: 16px;
 font-style: normal;
@@ -230,48 +230,45 @@ opacity: 0.6;
 background: #FFA943;
 }
 .img-fluid {
-    transition: transform 0.3s; /* Chuyển đổi mượt mà trong 0.3 giây */
+    transition: transform 0.3s;
 }
 
 .img-fluid:hover {
-    transform: scale(1.1); /* Phóng to hình ảnh khi hover */
+    transform: scale(1.1);
 }
 @keyframes rotate {
     0%, 100% {
-        transform: translateY(0); /* Vị trí ban đầu */
+        transform: translateY(0);
     }
     50% {
-        transform: translateY(-20px); /* Di chuyển lên trên */
+        transform: translateY(-20px);
     }
 }
 .img-svg {
     margin-top: 2rem;
 }
 .rotate {
-    animation: rotate 2s infinite; /* Thực hiện hiệu ứng trong 2 giây, lặp lại vô tận */
-    transform-origin: top; /* Xoay liên tục trong 3 giây */
+    animation: rotate 2s infinite;
+    transform-origin: top;
 }
-.bg-customer-4 h3 {
+ h3 {
     color: #FFF;
 
         font-size: 24px;
         font-style: normal;
-        /* font-weight: 700; */
         line-height: 32px;
 }
 .bg-customer-4 p {
-    color: #FFF;
+    color: #ACACAC;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    opacity: 0.6;
 }
 .list_row {
     border-radius: 99px;
     padding: 5px;
 background: rgba(255, 255, 255, 0.05);
-/* margin-top: 6%; */
 
 }
 .list_row img {
@@ -294,7 +291,6 @@ background: rgba(255, 255, 255, 0.05);
 }
 footer {
     background: rgba(255, 255, 255, 0.02);
-    /* padding: 12px; */
 }
 .layout-1 button {
     border-radius: 99px;
@@ -303,8 +299,7 @@ footer {
     color: #FFF;
     font-size: 20px;
     font-style: normal;
-    /* font-weight: 700; */
-    /* line-height: normal; */
+  
 }
 footer p {
     color: #FFF;
@@ -317,11 +312,10 @@ footer p {
     margin-top: 12px;
 }
 .my-3 p {
-    color: #FFF;
+    color: #ACACAC;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    opacity: 0.6;
     line-height: 24px;
 }
 footer img {
@@ -346,7 +340,7 @@ footer img {
     margin-left: 12px;
 }
 .img-responsive {
-    width: 100%; /* Với màn hình lớn */
+    width: 100%; 
     height: auto;
 }
 .staking_h1 {
@@ -360,9 +354,19 @@ footer img {
 .staking_e {
     gap: 12px;
 }
+section {
+    margin: 50px 0;
+    padding: 20px;
+    transition: opacity 1s ease-in-out;
+    opacity: 0; 
+}
+
+.visible {
+    opacity: 1; 
+}
 @media (max-width: 767px) {
     .img-responsive {
-        width: 80%; /* Với màn hình nhỏ */
+        width: 80%; 
     }
     .item-contact {
         background: rgba(255, 255, 255, 0.05);
@@ -376,7 +380,7 @@ footer img {
 }
 @media (max-width: 844px) {
     .img-responsive {
-        width: 80%; /* Với màn hình nhỏ */
+        width: 80%; 
     }
     .item-contact {
         background: rgba(255, 255, 255, 0.05);
@@ -388,9 +392,9 @@ footer img {
         margin-left: 0;
     }
 }
-@media (max-width: 767.98px) { /* Tương ứng với breakpoint sm */
+@media (max-width: 767.98px) { 
     .list_row .item_list {
-      border-right: none; /* Bỏ border-right */
+      border-right: none; 
     }
     .item-contact {
         margin-top: 1rem;
