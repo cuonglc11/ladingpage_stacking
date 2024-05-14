@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Top ConiMarket</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>TCM Stakes</title>
+    <link rel="stylesheet" href="./src/css/bootstrap.min-stack.css">
     <link rel="stylesheet" href="./src/css/style.css"/>
 </head>
 <body>
     <header>
         <nav class="container navbar navbar-expand-lg">
-            <img src="./src/img/logo.png" width="201"/>
+            <img src="./src/img/logo.svg" width="201"/>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,9 +57,9 @@
              <div class="col-lg-6 col-md-12 d-none d-md-block justify-content-center align-items-center">
                <img src="./src/img/m.png" class="rotate  img-fluid " />
              </div>
-             <div class="col-lg-6 col-md-12 d-block d-md-none justify-content-center align-items-center">
+             <!-- <div class="col-lg-6 col-md-12 d-block d-md-none justify-content-center align-items-center">
                 <img src="./src/img/m.png" class="rotate img-fluid " style="width: 70%;" />
-              </div>
+              </div> -->
          </div>
        </div>
     </section>
@@ -306,7 +306,7 @@
         <div class=" container " style="padding-top: 12px;">
             <div class="row">
                 <div class="col">
-                    <img src="./src/img/logo.png" width="201"/>
+                    <img src="./src/img/logo.svg" width="201" />
 
                 </div>
                 <div class="col-8">
@@ -328,12 +328,8 @@
 <script>
     document.querySelectorAll('.tab-header').forEach(tab => {
     tab.addEventListener('click', function() {
-        // Xóa lớp 'active' khỏi tất cả các tab headers
         document.querySelectorAll('.tab-header').forEach(t => t.classList.remove('active'));
-        // Thêm lớp 'active' vào tab hiện tại
         this.classList.add('active');
-
-        // Xóa 'd-none' khỏi tab nội dung được chọn và thêm nó vào các tab khác
         const tabId = this.getAttribute('data-tab');
         document.querySelectorAll('.tab-content > .col').forEach(content => {
             if (content.id === tabId) {
@@ -352,8 +348,8 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
     const targetElement = document.querySelector(targetId);
 
     if (targetElement) {
-      e.preventDefault(); // Ngăn chặn hành vi mặc định
-      targetElement.scrollIntoView({ behavior: 'smooth' }); // Cuộn mượt mà
+      e.preventDefault(); 
+      targetElement.scrollIntoView({ behavior: 'smooth' });
     }
   });
 });
