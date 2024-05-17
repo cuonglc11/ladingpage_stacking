@@ -328,7 +328,7 @@ footer img {
     background: rgba(255, 255, 255, 0.10);
     padding: 9px;
     margin-top: 6rem;
-
+    width: 62%;
 }
 .title span {
     color: #FFF;
@@ -399,5 +399,12 @@ section {
     .item-contact {
         margin-top: 1rem;
         margin-left: 0px;
+    }
+    .title {
+        border-radius: 99px;
+        background: rgba(255, 255, 255, 0.10);
+        padding: 9px;
+        margin-top: 6rem;
+        width: 100%;
     }
   }
