@@ -5,13 +5,13 @@
 
 }
 html {
-    height: 100%;  /* Đảm bảo HTML bao phủ toàn bộ chiều cao */
+    height: 100%; 
 }
 body {
     padding: 0;
     margin: 0;
-    background: url('../img/bg-login.png') black no-repeat center center; /* Đảm bảo hình nền ở giữa */
-    background-size: cover; /* Bảo đảm nền bao phủ toàn bộ chiều ngang */
+    background: url('../img/bg-login.png') black no-repeat center center; 
+    background-size: cover; 
     color: #FFF;
     font-family: 'HelveticaNowDisplay';
     margin-top: 5rem;
@@ -35,18 +35,17 @@ body {
     width: 24rem;
     border-radius: 8px;
     background: #1E2021;
-    box-shadow: none; /* Loại bỏ bóng */
+    box-shadow: none; 
     color: white; 
     margin-top: 28px;
     padding: 10px 10px;
     border: none;
 }
 .input-login:focus {
-    outline: none; /* Loại bỏ viền nổi bật khi phần tử được chọn */
-    box-shadow: none; /* Loại bỏ mọi bóng khi được chọn */
+    outline: none; 
+    box-shadow: none;
 }
 .custom-checkbox {
-    /* appearance: none; */
     width: 24px;
     height: 24px;
     opacity: 0.5;
@@ -97,8 +96,21 @@ line-height: 24px;
     font-size: 24px;
     line-height: 150%; /* 48px */
     letter-spacing: 0.64px;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 
+
+}
+.frame-end_re {
+    BACKGROUND: rgba(255, 255, 255, 0.05);
+    border-top: 3px solid var(--Primary, #00ABFF);
+    border-radius: 24px;
+    padding: 1rem;
+}
+.frame-end_re h1 {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 150%; /* 48px */
+    letter-spacing: 0.64px;
 
 }
 .put {
@@ -110,4 +122,10 @@ line-height: 24px;
 .frame-end img {
     width: 85%;
     margin-top: 3rem;
+}
+.heder-container {
+    margin-bottom: 2rem;
+}
+footer {
+    background: rgba(255, 255, 255, 0.02);
 }
