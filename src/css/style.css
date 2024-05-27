@@ -289,6 +289,9 @@ background: rgba(255, 255, 255, 0.05);
 .list_row .item_list_f {
     padding: 10px;
 }
+.img-moblie {
+    width: 11rem;  display: block; margin: auto;
+}
 footer {
     background: rgba(255, 255, 255, 0.02);
 }
@@ -300,6 +303,9 @@ footer {
     font-size: 20px;
     font-style: normal;
   
+}
+.button_moblie {
+    width: 100%;
 }
 footer p {
     color: #FFF;
@@ -406,5 +412,13 @@ section {
         padding: 9px;
         margin-top: 6rem;
         width: 100%;
+    }
+    .layout-1 {
+        opacity: 1;
+        background: url(../img/bk-h.png)  0px -53.146px / 100% 106.984% no-repeat;
+        /* height: 673px; */
+        flex-shrink: 0;
+        align-items: center;
+        padding-top: 5%;
     }
   }
