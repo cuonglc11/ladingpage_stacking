@@ -25,7 +25,7 @@ header {
     right: 0;        
     z-index: 100;
 }
-.horizontal-list {
+.horizontal-list  {
     display: flex; 
     justify-content: center;
     gap: 2rem;
@@ -36,9 +36,13 @@ header {
 
 }
 .horizontal-list li {
-    border-bottom: 2px solid #8C8C8C;
+    /* border-bottom: 2px solid #8C8C8C; */
     /* padding-bottom: 5px;  */
     padding-bottom: 2px;
+}
+.horizontal-list  a  {
+    color: var(--text-ph, #8C8C8C);
+
 }
 .navbar-toggler {
     color: white;
@@ -140,12 +144,11 @@ line-height: 32px;
 }
 .my-custom-style p {
     color: #ACACAC;
-
-text-align: center;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
 .custom-padding {
     padding: 44px 56px;  
@@ -280,8 +283,12 @@ background: #FFA943;
 .list_row {
     border-radius: 99px;
     padding: 5px;
-background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
 
+}
+.item_from {
+    padding-top: 1rem;
+    padding-left: 7rem;
 }
 .list_row img {
     width: 24px;
@@ -347,6 +354,12 @@ footer img {
     padding: 9px;
     margin-top: 6rem;
     width: 62%;
+}
+.teams h1 {
+    font-size: 20px;
+}
+.teams {
+    font-family: 'HelveticaNowDisplay';
 }
 .title span {
     color: #FFF;
@@ -432,5 +445,8 @@ section {
         flex-shrink: 0;
         align-items: center;
         padding-top: 5%;
+    }
+    .item_from {
+        padding: 0;
     }
   }
