@@ -36,8 +36,6 @@ header {
 
 }
 .horizontal-list li {
-    /* border-bottom: 2px solid #8C8C8C; */
-    /* padding-bottom: 5px;  */
     padding-bottom: 2px;
 }
 .horizontal-list  a  {
